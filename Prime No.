@@ -1,0 +1,17 @@
+# Python code to check Prime Number
+print("Enter your No-")
+i=int(input())  # define variable to take input from user
+k=1
+p=1
+if(i<0):        # to make sure the input no. is whole no.
+    print("please enter positive number")
+else:
+    while k!=0 and p<=i:
+        if(i==1):
+            break
+        p+=1
+        k=i%p
+    if(i==p):   # to 
+        print ("Yes")
+    else:
+        print("No, it's divisible by", p)
